@@ -1,0 +1,27 @@
+----------
+~ ~ GR ~ ~
+----------
+
+Για την πρώτη άσκηση θα κάνετε ευρετική αξιολόγηση (heuristic evaluation) του ιστοχώρου του Οργανισμού Αστικών Συγκοινωνιών Αθηνών - ΟΑΣΑ (http://www.oasa.gr/). Ο ιστοχώρος απευθύνεται σε όλους τους κατοίκους αλλά και επισκέπτες της ευρύτερης αστικής περιοχής της Αθήνας που είναι επιβάτες ή εν δυνάμει επιβάτες των Μέσων Μαζικής Μεταφοράς (ΜΜΜ) της περιοχής.  
+Ο απώτερος στόχος της Άσκησης 1 είναι να αποτελέσει τη βάση για τον επανασχεδιασμό της διεπαφής. Αφού χρησιμοποιήσετε τον ιστοχώρο, εκτελώντας εργασίες οι οποίες αντιστοιχούν σε βασικές λειτουργίες που επιτελούν οι χρήστες στους οποίους απευθύνεται, θα προχωρήσετε στην ευρετική αξιολόγησή του.
+
+Συγκεκριμένα, θα πρέπει:
+
+1) Να αναφέρετε μέχρι 5 από τα βασικότερα, κατά τη γνώμη σας, γενικά προβλήματα χρηστικότητας της αρχικής σελίδας του ιστοχώρου, αιτιολογώντας την επιλογή σας και δίνοντας συγκεκριμένα παραδείγματα για το κάθε πρόβλημα από τον ιστοχώρο που αξιολογείτε.
+2) Να καταγράψετε μέχρι 20 σημαντικά προβλήματα χρηστικότητας και να τα αντιστοιχήσετε στις αρχές και τους κανόνες ευχρηστίας του Nielsen που αναπτύχθηκαν στην τάξη.
+3) Να προτείνετε αρχικούς τρόπους βελτίωσης της χρηστικότητας για κάθε πρόβλημα που έχετε καταγράψει.
+
+
+
+----------
+~ ~ EN ~ ~
+----------
+
+For the first exercise you will perform a heuristic evaluation of the Athens Urban Transport Organization (OASA) website (http://www.oasa.gr/). The website is intended for all residents and visitors of the greater urban area of ​​Athens who are passengers or potential passengers of the area's public transport (MMM).
+The ultimate goal of Exercise 1 is to provide the basis for redesigning the interface. After using the website, performing tasks that correspond to the basic functions performed by the users to whom it is addressed, you will perform a heuristic evaluation.
+
+In particular, you should:
+
+1) List up to 5 of the most important, in your opinion, general usability issues of the website homepage, justifying your choice and giving specific examples of each problem from the site you are evaluating.
+2) Record up to 20 significant usability issues and match them to Nielsen's classroom principles and usability rules.
+3) Suggest initial ways to improve usability for each problem you have recorded.
