@@ -5,7 +5,9 @@ background-color: #00a5bb;;
 
 /*NAVBAR*/
 
-
+.navbar{
+  width: 98%;
+}
 
 
 /* MAP */
