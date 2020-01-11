@@ -7,22 +7,13 @@ include('./components/header/header.php');
   <h2>Login to your account</h2>
   <form>
     <p>Email</p>
-    <input type="text" title="username" placeholder="username" />
+    <input id="email" type="text" title="email" placeholder="Email" />
     <p>Κωδικός</p>
-    <input type="password" title="username" placeholder="password" />
+    <input id="password" type="password" title="password" placeholder="password" />
     <button type="submit" class="btn">Login</button>
-    <a class="forgot" href="#">Forgot Username?</a>
+    <a class="forgot" href="#">Ξεχάσατε τον Κωδικό σας?</a>
   </form>
 </div><!--end log form -->
-
-
-<?php
-
-//MAP
- 
-//TABS
-
-?>
 
 <?php 
 //FOOTER
