@@ -8,10 +8,11 @@ include('./components/header/header.php');
 
 //MAP
 
+
+//TABS
+
 ?>
-
-
-<?php include('./components/searchbar/searchbar2.html'); ?>
+<?php include('./components/searchbar/searchbar.html'); ?>
 
 
 <?php 

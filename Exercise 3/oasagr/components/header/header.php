@@ -14,6 +14,7 @@
 
   
 </head>
+
 <?php if (session_status() == PHP_SESSION_NONE) {
     session_start();
     //user connected to the site
@@ -22,6 +23,6 @@
 <?php 
 
 //NAVBAR
-include( getcwd() . '\components\navbar\navbar.php');
+include('components\navbar\navbar.php');
 
 ?>

@@ -6,6 +6,3 @@ echo "<p style= 'text-align: center; font-weight: bold;'>Copyright &copy; " . da
 ?>
 </footer>
 </html>
-<?php 
-//site ends here 
-?>

@@ -1,58 +1,17 @@
-<nav>
-<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="#!">Logo</a>
-    </div>
-    <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="#!">Home</a>
-        </li>
-        <li>
-          <a href="#!">About</a>
-        </li>
-        <li>
-          <a href="#!">Services</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="#!">Web Design</a>
-            </li>
-            <li>
-              <a href="#!">Web Development</a>
-            </li>
-            <li>
-              <a href="#!">Graphic Design</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#!">Pricing</a>
-        </li>
-        <li>
-          <a href="#!">Portfolio</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="#!">Web Design</a>
-            </li>
-            <li>
-              <a href="#!">Web Development</a>
-            </li>
-            <li>
-              <a href="#!">Graphic Design</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#!">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
+ <div class="navbar">
+     <ul class="nav navbar-nav ">
+     <li><a  href="http://localhost:8080" class="">Oasa.gr</a></li>
+     <li><a  href="/tickets"              class="">Εισιτήρια</a></li>
+     <li><a  href="/news"                 class="">Νέα</a></li>
+     <li><a  href="/contact"              class="">Επικοινωνία</a></li>
+     <li><a  href="/FAQ"                  class="">Συχνές Ερωτήσεις</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+     
+	<li><a href="index.html"  class=""> <img src="components\navbar\English-Language-Flag-1-icon.png" title="English" height="20" width="17"> <br> </a></li>
+     <li><a href="index.html" class=""> <img src="components\navbar\login.png" title="login" height="20" width="17"> <br> </a></li>
+	<li><a href="/login"    class="">Σύνδεση</a></li>
+	<li><a href="/register" class="">Εγγραγή</a></li>
+	</ul>
+ </div>
 
-
-
-
-</nav>

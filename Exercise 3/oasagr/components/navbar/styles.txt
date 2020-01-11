@@ -1,7 +1,4 @@
-	File Name: style.css
-	Template Name: Atlas
-	Created By: Designing Media
-	
+
 
 /*	################################################################
 	2. SKELETON
@@ -791,7 +788,6 @@
 		color: #fff;
 		font-style: normal;
 		font-weight: normal;
-		speak: none;
 		display: inline-block;
 		text-decoration: inherit;
 		margin-right: 0;
@@ -1354,7 +1350,6 @@
 		visibility: visible;
 	}
 	.magnifier {
-		background:#3C3B3B000;
 		background:rgba(0,0,0,0.8);
 		position:absolute;
 		top:0;
@@ -2612,7 +2607,7 @@
 	20. Mobile Responsive
 	################################################################# */	
 	
-	@media (max-width: 768px) { {
+	@media (max-width: 768px) { 
 		.home-content h1 {font-size:31px !important}
 		.tparrows,
 		.small_title,
@@ -2651,7 +2646,7 @@
 	font-size: 26px;
 	}
 	
-	}
+	
 	
 	
 /*	################################################################
