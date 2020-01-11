@@ -12,8 +12,6 @@ include('./components/header/header.php');
 //TABS
 
 ?>
-<?php include('./components/searchbar/searchbar.html'); ?>
-
 
 <?php 
 //FOOTER
