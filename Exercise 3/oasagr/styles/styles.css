@@ -5,9 +5,7 @@ background-color: #00a5bb;;
 
 /*NAVBAR*/
 
-.navbar{
-  width: 98%;
-}
+
 
 
 /* MAP */
@@ -123,3 +121,45 @@ footer{
     width:100%; 
     height:100px; 
   }
+  
+/*FAQ*/
+
+
+
+
+
+
+
+.tab-content .card-header {
+  padding: 15px 16px;
+  border-radius: 0;
+  background-color: #f6f6f6;
+}
+.tab-content .card-header h5 {
+  margin: 0;
+}
+.tab-content .card-header h5 button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: left;
+  white-space: normal;
+}
+
+.tab-content .card-body p {
+  color: #616161;
+}
+.tab-content .card-body p:last-of-type {
+  margin: 0;
+}
+
+.accordion > .card:not(:first-child) {
+  border-top: 0;
+}
+
+.collapse.show .card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
