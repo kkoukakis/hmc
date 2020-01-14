@@ -43,36 +43,36 @@
                         <div class="card">
                             <div class="card-header" id="accordion-tab-1-heading-2">
                                 <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Πόση χωρητικότητα έχει ένα βαγόνι;</button>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2"> Ποιός είναι ο ρόλος της Ο.ΣΥ. Α.Ε.;</button>
                                 </h5>
                             </div>
                             <div class="collapse show" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Η Ο.ΣΥ. Α.Ε. έχει αναλάβει την εκτέλεση του συγκοινωνιακού έργου με θερμικά και ηλεκτροκίνητα λεωφορεία, στην περιοχή αρμοδιότητας του Ο.Α.Σ.Α, δηλαδή στην περιοχή Αθηνών – Πειραιώς και Περιχώρων. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="accordion-tab-1-heading-3">
                                 <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Ποιά είναι τα δεομολόγια;</button>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Πόσο κοστίζουν τα εισιτήρια και οι κάρτες;</button>
                                 </h5>
                             </div>
                             <div class="collapse show" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+                                    <p>Υπάρχουν διάφοροι τύποι εισιτηρίων και καρτών, παρακαλώ επισκεφτείτε τη σχετική ενότητα στο δικτυακό τόπο του Ο.Α.Σ.Α. Α.Ε.. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="accordion-tab-1-heading-4">
                                 <h5>
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">Πόσο διαρκεί ένα εισιτήριο;</button>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">	Πώς μπορώ να μάθω αν δικαιούμαι ελεύθερης μετακίνησης με τα λεωφορεία/τρόλεϊ ;</button>
                                 </h5>
                             </div>
                             <div class="collapse show" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p>Για να δείτε αν ανήκετε στις κατηγορίες επιβατών που απαλλάσσονται από την καταβολή κομίστρου για τη μετακίνησή τους με τα λεωφορεία της Ο.ΣΥ. Α.Ε. παρακαλώ επισκεφτείτε τη σχετική ενότητα στο δικτυακό τόπο του Ο.Α.Σ.Α. Α.Ε. . </p>
                                 </div>
                             </div>
                         </div>
