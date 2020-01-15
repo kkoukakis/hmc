@@ -9,10 +9,15 @@ $breadcrumb = array('Oasa.gr','Χάρτης', 'Στάσεις');
 $breadlinks = array('index.php','#','stops.php');
 include('components\breadcrumbs\breadcrumb.php');
 ?>
+<form method="POST">
+<input name="text"></input>
+<button type="submit">Αναζήτηση</button>
+</form>
+<?php
 
 
 
-<?php if(isset($_SESSION['type']) && $_SESSION['type']=='4'){
+if(isset($_SESSION['type']) && ($_SESSION['type']=='3') ||  $_POST['text']='αμεα' || $_POST['text']='ΑΜΕΑ'){
 echo('
 <table cellspacing="0" cellpadding="0" style="background-color:whitesmoke;">
     <colgroup><col width="58">
