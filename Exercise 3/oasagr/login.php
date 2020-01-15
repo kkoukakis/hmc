@@ -14,7 +14,7 @@ include('components\breadcrumbs\breadcrumb.php');
 <?php
 
 //already logged in?
-if(isset($_SESSION["user"]) && $_SESSION["user"] != ""){
+if(isset($_SESSION["type"]) && $_SESSION["type"] != ""){
   echo '<script>alert("Already logged in!");</script>';
   header("location: index.php");
   exit;
@@ -24,8 +24,36 @@ if(isset($_SESSION["user"]) && $_SESSION["user"] != ""){
 //db connector
 require_once('scripts\db-connector.php');
 
-$email = "";
-$password = "";
+
+
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+  // username and password sent from form 
+  $bla = 0;
+if($_POST['email'] === ""){$bla = 1 ; exit; }
+if($_POST['password'] === ""){$bla = 1 ; exit; }
+
+
+
+if($bla == 0){
+  $email = mysqli_real_escape_string($db,$_POST['email']);
+  $password = mysqli_real_escape_string($db,$_POST['password']);
+  $sql = "SELECT * FROM users WHERE email = '$email' and password = '$password'";
+  $result = mysqli_query($db,$sql);
+  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+  $count = mysqli_num_rows($result);
+  
+  if($count == 1) {
+     $_SESSION['email'] = $email;
+     
+     header("location: index.php");
+  }else {
+     $error = "Your Credentials are invalid";
+    echo('<script>alert('.$error.'</script>');
+  }
+}
+}
+
 
 ?>
 
@@ -45,9 +73,9 @@ $password = "";
   <h2>ΣΥΝΔΕΣΗ ΣΤΟΝ ΙΣΤΟΤΟΠΟ</h2>
   <form method="post">
     <p>Email</p>
-    <input id="email" type="text" title="email" placeholder="Email" />
+    <input name="email" id="email" type="text" title="email" placeholder="Email" />
     <p>Κωδικός</p>
-    <input id="password" type="password" title="password" placeholder="password" />
+    <input name="password" id="password" type="password" title="password" placeholder="password" />
     <button type="submit" class="btn">Login</button>
     <a class="forgot" href="#">Ξεχάσατε τον Κωδικό σας?</a>
   </form>

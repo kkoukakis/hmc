@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         
-        <div class="col-lg-8">
+        <div class="col-lg-8" style="background-color: #546e7a;">
             <div class="tab-content" id="faq-tab-content">
                 <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
                     <div class="accordion" id="accordion-tab-1">

@@ -7,4 +7,11 @@
    if($db === false){
       die('Error:' . mysqli_connect_error());
    }
+
+//LIBRARY OF FUNCTIONS
+   function checkEmail($email) {
+      $find1 = strpos($email, '@');
+      $find2 = strpos($email, '.');
+      return ($find1 !== false && $find2 !== false && $find2 > $find1);
+    }
 ?>
