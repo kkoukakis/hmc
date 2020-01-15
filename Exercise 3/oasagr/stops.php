@@ -16,29 +16,46 @@ include('components\breadcrumbs\breadcrumb.php');
 <?php
 
 
-if($_POST['text']==''){
-echo('
+if(isset($_POST['text'])){
+  require('scripts\db-connector.php');
+
+  
+  $sql = "SELECT * FROM stops WHERE amea = \'".$_POST['text']."\'";
+  echo('<script>alert("'. $sql .'");</script>');
+  $result = mysqli_query($db,$sql);
+
+  if ($result) {
+    echo('
 <table cellspacing="0" cellpadding="0" style="background-color:whitesmoke;">
     <colgroup><col width="58">
     <col width="111">
     <col width="225" span="3">
-    </colgroup><tbody><tr height="21">
-      <td colspan="5" width="844" height="21">ΠΡΟΕΞΟΧΕΣ ΠΕΖΟΔΡΟΜΙΩΝ ΟΑΣΑ</td>
+    </colgroup>
+    
+    <tbody><tr height="21">
+      <td colspan="5" width="844" height="21">ΣΤΑΣΕΙΣ</td>
     </tr>
     <tr height="20">
       <td width="58" height="20">#</td>
       <td width="111">ΚΩΔΙΚΟΣ&nbsp;</td>
       <td width="225">ΟΝΟΜ.ΣΤΑΣΗΣ</td>
-      <td width="225">ΟΔΟΣ</td>
-      <td width="225">ΔΗΜΟΣ&nbsp;</td>
-    </tr>'.
-    
-    SELECT column1, column2,FROM table_name WHERE columnN LIKE pattern; 
-
-   .' </tbody></table>
-    ');
+      <td width="225">ΦΙΛΙΚΟ ΑΜΕΑ</td>
+    </tr>');
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        echo('<script>alert("'.$row["name"] .'");</script>
+        <tr height="20">
+        <td width="58" height="20">1</td>
+        <td width="111">'.$row["id"].'</td>
+        <td width="225">'.$row["name"].'</td>
+        <td width="225">'.$row["amea"].'</td>
+      </tr>');
+      }
+      echo(' </tbody></table>');
 }
-if($_POST['text']=='ΑΜΕΑ'||$_POST['text']=='αμεα'){
+}?>
+<?php
+if(isset($_POST['text']) && ($_POST['text']=='ΑΜΕΑ' || $_POST['text']=='αμεα')){
 echo('
 <table cellspacing="0" cellpadding="0" style="background-color:whitesmoke;">
     <colgroup><col width="58">
