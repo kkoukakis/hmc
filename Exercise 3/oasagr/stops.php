@@ -5,7 +5,7 @@ include('./components/header/header.php');
 
 <?php
 // BREADCRUMB
-$breadcrumb = array('Oasa.gr','Διαδρομμές', 'Στάσεις');
+$breadcrumb = array('Oasa.gr','Χάρτης', 'Στάσεις');
 $breadlinks = array('index.php','#','stops.php');
 include('components\breadcrumbs\breadcrumb.php');
 ?>

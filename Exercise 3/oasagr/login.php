@@ -44,9 +44,12 @@ if($bla == 0){
   $count = mysqli_num_rows($result);
   
   if($count == 1) {
-     $_SESSION['email'] = $email;
-     
-     header("location: index.php");
+      $_SESSION['email']= $row['email'];
+      $_SESSION['name'] = $row['name'];
+      $_SESSION['type'] = $row['type'];
+      $_SESSION['last'] = $row['last'];
+      echo('<script>alert('. $_SESSION['email'] .');</script>');
+      header("location: index.php");
   }else {
      $error = "Your Credentials are invalid";
     echo('<script>alert('.$error.'</script>');

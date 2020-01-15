@@ -53,7 +53,7 @@ if(isset($_SESSION['type']) && ($_SESSION['type']=="3")){
 if(isset($_SESSION['type']) && ($_SESSION['type']=="4")){
 
   $numoftickets = 1;
-  $total = $numoftickets * 0;
+  $total = $numoftickets * 0.60;
   echo("<script>alert('Συνολικά:'+$total+'Euro');</script>");
 
 
@@ -97,7 +97,7 @@ if(!isset($_SESSION['type'])){
  if($_POST['type']==="4"){
  
    $numoftickets = 1;
-   $total = $numoftickets * 0;
+   $total = $numoftickets * 0.60;
 
  
  }

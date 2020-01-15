@@ -30,7 +30,7 @@
           echo("
           <li><a href=\"favorites.php\" class=\"d\"> 
           <img class=\"img-invert\" src=\"components\\navbar\heart.png\" title=\"favorites\" height=\"20\" width=\"20\" style=\"padding-top: 8px;\"> Αγαπημένα </a></li>
-          <li><a href=\"profil.php\"    class=\"d\">Προφίλ</a></li>
+          <li><a href=\"editprofile.php\"    class=\"d\">Προφίλ</a></li>
           <li><a href=\"scripts\logout.php\"    class=\"d\">Αποσύνδεση</a></li>");
      }
      else{

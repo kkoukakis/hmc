@@ -22,7 +22,7 @@ include('components\breadcrumbs\breadcrumb.php');
 //==================
 //REGISTER PROCEDURE
 //==================
-require_once('scripts\db-connector.php');
+require('scripts\db-connector.php');
 
 //after submit
 if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -36,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   if ( !checkEmail($_POST['email']) ) {echo('<script>alert(\''. 'Σφάλμα: Λανθασμένο email. ' .'\')</script>'); $error=1; }
   
   if(rtrim($_POST['phone']," ") === ""){echo('<script>alert(\''. 'Σφάλμα: Το τηλέφωνο είναι κενό ' .'\')</script>'); $error=1;}
-  if(count($_POST['phone'])<8 || is_numeric($_POST['phone'])==false){
+  if(!is_numeric($_POST['phone'])===true){
     echo('<script>alert(\''. 'Σφάλμα: Το τηλέφωνο είναι λανθασμένο. ' .'\')</script>'); $error=1;
   }
   if($_POST['password']  === ""){echo('<script>alert(\''. 'Σφάλμα: Το πεδίο κωδικός είναι κενό ' .'\')</script>'); $error=1;}
@@ -56,26 +56,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
  
 
 
-  $sql = "SELECT * FROM users WHERE email = '$email'"; 
-  $result = mysqli_query($db,$sql);
-  $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-  $count = mysqli_num_rows($result);
-  if($count != 0){echo('<script>alert(\''. 'Σφάλμα: Υπάρχει ήδη χρήστης με αυτό το email. ' .'\')</script>'); $error=1;}
+  // $sql = "SELECT * FROM users WHERE email = '$email'"; 
+  // $result = mysqli_query($db,$sql);
+  // $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+  // $count = mysqli_num_rows($result);
+  // if($result->mysqli_num_rows){echo('<script>alert(\''. 'Σφάλμα: Υπάρχει ήδη χρήστης με αυτό το email. ' .'\')</script>'); $error=1;}
 
 
 
 
   if($error== 0){
-  $sql = "INSERT INTO users VALUES ('$email','$password','$type','$name','$last', '$phone')";
+  $sql = "INSERT INTO users VALUES ('$email','$password','$type','$name','$last', '$phone',1)";
   $result = mysqli_query($db,$sql);
   echo $result;
 
-  if($result == 1) {
+  if($result) {
      $_SESSION['first'] = $name;
      $_SESSION['email'] = $email;
      $_SESSION['type'] = $type;
      $_SESSION['name'] = $last;
-     echo('<script>alert(123);</script>');
+     echo('<script>alert(\"Welcome\");</script>');
      header("location: index.php");
   }else {
      $error = "Something went wrong...";
@@ -108,8 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <select name="type" id="type" name="type" class="browser-default">
       <option value="1"  title="Για τους Κοινούς Επιβάτες, Τουρίστες" >Κανονικό</option>
       <option value="2" title="Για τους Φοιτητές" >Μειωμένο</option>
-      <option value="3" title="Για τους Άνεργους" >Δωρεάν</option>  
-      <option value="4" title="Για τους ΑΜΕΑ" >Αμέα</option>    
+      <option value="3" title="Για τους Άνεργους,Aμέα" >Δωρεάν</option>  
     </select>
     <p>Κωδικός Πρόσβασης</p>
     <input name="password" id="password" type="password" title="Πληκρολογήστε τον κωδικό πρόσβασης που θέλετε να ορίσετε." placeholder="κωδικός" />
