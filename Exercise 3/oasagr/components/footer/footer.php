@@ -1,7 +1,9 @@
 
 <footer>
 <?php
-echo "<p style= 'text-align: center; font-weight: bold;'>Copyright &copy; " . date("Y") . "</p> <br>";
+
+//INSERT LAST NEWS
+echo "<p href=\"news.php\" style= 'padding-top:10%; text-align: center; font-weight: bold;'>News</p> <br>";
 
 ?>
 </footer>
