@@ -16,6 +16,21 @@
 CREATE DATABASE IF NOT EXISTS `sdi1400289` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `sdi1400289`;
 
+-- Dumping structure for table sdi1400289.favorites
+CREATE TABLE IF NOT EXISTS `favorites` (
+  `email` varchar(80) NOT NULL,
+  `news` varchar(80) NOT NULL,
+  `bus` varchar(80) NOT NULL,
+  `stops` varchar(80) NOT NULL,
+  KEY `Index 1` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table sdi1400289.favorites: ~1 rows (approximately)
+/*!40000 ALTER TABLE `favorites` DISABLE KEYS */;
+INSERT INTO `favorites` (`email`, `news`, `bus`, `stops`) VALUES
+	('user@user.gr', '1', '224', 'Ευαγγελισμός');
+/*!40000 ALTER TABLE `favorites` ENABLE KEYS */;
+
 -- Dumping structure for table sdi1400289.news
 CREATE TABLE IF NOT EXISTS `news` (
   `date` varchar(50) NOT NULL,
@@ -24,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `news` (
   `content` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sdi1400289.news: ~0 rows (approximately)
+-- Dumping data for table sdi1400289.news: ~1 rows (approximately)
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
 INSERT INTO `news` (`date`, `category`, `bus`, `content`) VALUES
 	('14.01.20', '', '101', 'Μερική προσωρινή τροποποίηση της λεωφορειακής γραμμής 101 λόγω έργων στο Δήμο Αλίμου. ');
@@ -38,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `stops` (
   KEY `Index 1` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
--- Dumping data for table sdi1400289.stops: ~0 rows (approximately)
+-- Dumping data for table sdi1400289.stops: ~1 rows (approximately)
 /*!40000 ALTER TABLE `stops` DISABLE KEYS */;
 INSERT INTO `stops` (`id`, `name`, `amea`) VALUES
 	(1, 'Ευαγγελισμός', 'ΝΑΙ');
@@ -55,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   KEY `uid` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- Dumping data for table sdi1400289.users: ~0 rows (approximately)
+-- Dumping data for table sdi1400289.users: ~2 rows (approximately)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`email`, `password`, `type`, `name`, `last`, `phone`) VALUES
 	('user@user.gr', 'user', '1', 'Kanonikos', 'Kurios', '2101234567'),
