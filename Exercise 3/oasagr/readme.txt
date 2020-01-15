@@ -16,11 +16,22 @@
          images - περιέχουν κάτι εικόνες που δεν αποτελούν κομμάτι των components
          scripts - scriptακια όπως το db-connector.php
 
+CSS Frameworks:
+            Materialize.css
+            Bootstrap.css
+            leaflet.css
+            styles.css
 
-Βάση δεδομένων: χρησιμοποιήσαμε mariadb
+Βάση δεδομένων: 
+                χρησιμοποιήσαμε mariadb
                 3 tables: users(χρήστες)
                           fav(αγαπημένα χρηστών)
                           news(νεα)
                           stops(στάσεις)
                           buses(λεωφορεία)
+                db/db.sql
+
+Χρήστες:
+    κανονικό: user@user.gr | user
+    μειωμένο: user2@user2.gr | user2
 
