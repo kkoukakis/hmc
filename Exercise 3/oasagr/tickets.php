@@ -48,33 +48,24 @@ if(isset($_SESSION['type']) && ($_SESSION['type']==4)){
 
 }
 ?>
-<table>
-        <thead>
-          <tr>
-              <th>Name</th>
-              <th>Item Name</th>
-              <th>Item Price</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-        </tbody>
-      </table>
+<?php
+if(!isset($_SESSION['type']))
+{
+  echo('
+<div class="login">
+  <h2>ΑΓΟΡΑ/ΦΟΡΤΙΣΗ ΕΙΣΙΤΗΡΙΟΥ </h2>
+  <form method="post">
+    <p>Ποσότητα εισιτηρίων</p>
+    <select name="num" id="num" type="text" title="Πόσα εισιτήρια θα πάρετε" placeholder="1" />
+    <p>Είδος εισιτηρίων</p>
+    <input name="password" id="password" type="password" title="password" placeholder="password" />
+    <button type="submit" class="btn">Αγορά</button>
+    <a class="forgot" href="login.php">Δικαιούστε μειωμένο κάντε σύνδεση?</a>
+  </form>
+</div>
+');
+}
+?>
 
 <?php 
 //FOOTER

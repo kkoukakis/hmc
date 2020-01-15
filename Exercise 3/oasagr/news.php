@@ -16,6 +16,13 @@ include('components\breadcrumbs\breadcrumb.php');
 
 <ul class="collection" style="background-color: whitesmoke;">
 
+
+<?php 
+
+
+echo('<li class="collection-item"><a>14.01.20 Μερική προσωρινή τροποποίηση της λεωφορειακής γραμμής 101 λόγω έργων στο Δήμο Αλίμου. </a><a href="#!" class="secondary-content"><i class="material-icons"><3</i></a></div></li>');
+
+?>
 <li class="collection-item"><a>14.01.20 Μερική προσωρινή τροποποίηση της λεωφορειακής γραμμής 101 λόγω έργων στο Δήμο Αλίμου. </a><a href="#!" class="secondary-content"><i class="material-icons"><3</i></a></div></li>
 <li class="collection-item"><a>14.01.20 Μερική προσωρινή τροποποίηση της λεωφορειακής γραμμής 162 στο Δήμο Βάρης – Βούλας – Βουλιαγμένης. </a><a href="#!" class="secondary-content"><i class="material-icons"><3</i></a></div></li>
 

@@ -16,8 +16,29 @@ include('components\breadcrumbs\breadcrumb.php');
 <?php
 
 
+if($_POST['text']==''){
+echo('
+<table cellspacing="0" cellpadding="0" style="background-color:whitesmoke;">
+    <colgroup><col width="58">
+    <col width="111">
+    <col width="225" span="3">
+    </colgroup><tbody><tr height="21">
+      <td colspan="5" width="844" height="21">ΠΡΟΕΞΟΧΕΣ ΠΕΖΟΔΡΟΜΙΩΝ ΟΑΣΑ</td>
+    </tr>
+    <tr height="20">
+      <td width="58" height="20">#</td>
+      <td width="111">ΚΩΔΙΚΟΣ&nbsp;</td>
+      <td width="225">ΟΝΟΜ.ΣΤΑΣΗΣ</td>
+      <td width="225">ΟΔΟΣ</td>
+      <td width="225">ΔΗΜΟΣ&nbsp;</td>
+    </tr>'.
+    
+    SELECT column1, column2,FROM table_name WHERE columnN LIKE pattern; 
 
-if(isset($_SESSION['type']) && ($_SESSION['type']=='3') ||  $_POST['text']='αμεα' || $_POST['text']='ΑΜΕΑ'){
+   .' </tbody></table>
+    ');
+}
+if($_POST['text']=='ΑΜΕΑ'||$_POST['text']=='αμεα'){
 echo('
 <table cellspacing="0" cellpadding="0" style="background-color:whitesmoke;">
     <colgroup><col width="58">
