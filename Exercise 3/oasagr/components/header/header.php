@@ -24,6 +24,8 @@
     //user connected to the site
 } ?>
 
+
+
 <?php 
 
 //NAVBAR
