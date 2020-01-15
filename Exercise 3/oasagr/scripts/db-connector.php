@@ -4,4 +4,7 @@
    define('DB_PASSWORD', '1234');
    define('DB_DATABASE', 'sdi1400289');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+   if($db === false){
+      die('Error:' . mysqli_connect_error());
+   }
 ?>

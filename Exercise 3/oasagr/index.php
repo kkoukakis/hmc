@@ -1,10 +1,14 @@
 <?php 
+
 //HEADER
 include('./components/header/header.php');
 ?>
 
 
 <?php
+
+
+
 
 //MAP
 
