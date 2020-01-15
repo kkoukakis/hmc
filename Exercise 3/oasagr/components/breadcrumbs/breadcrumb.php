@@ -1,20 +1,32 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+<!-- DYNAMIC BREADCRUMB -->
+<?php 
+echo '<script> console.log(' . count($breadcrumb) . ')</script>';
+// echo $breadlinks[0];
+// echo $breadlinks[1];
+$i = count($breadcrumb);
 
-  
-</head>
-    
-      <div class="page__section">
-        <ul class="breadcrumbs breadcrumbs_type5">
-          <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__element">Home</a></li>
-          <li class="breadcrumbs__item"><a href="#0" class="breadcrumbs__element">Blog</a></li>
-          <li class="breadcrumbs__item breadcrumbs__item_active"><span class="breadcrumbs__element">Single post</span></li>
-        </ul>
-      </div>   
+if($i > 1){
+?> 
+ <nav>
+    <div class="nav-wrapper">
+      <div class="col s12 b">
+      <?php
+         
+         $j = 0;
+         
+         for($j;$j<$i;$j++){
+          
+           echo('<a href="'. $breadlinks[$j] .'" class=\"b\">' . $breadcrumb[$j] . '</a>');
+         
+          
+         }
+         
+        
+       ?>
+      </div>
+    </div>
+  </nav>
 
+<?php
+}
+?>
